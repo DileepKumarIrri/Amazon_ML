@@ -1,5 +1,27 @@
 # ML Challenge Problem Statement
 
+**Project Title**: **Automated Extraction of Product Specifications from Images Using OCR and Machine Learning**
+
+**Description**:
+Developed a comprehensive solution for accurately extracting and standardizing product specifications from images in e-commerce applications, achieved as part of the Amazon Machine Learning Challenge. This project utilizes Optical Character Recognition (OCR) technology with PaddleOCR and regular expressions to identify and convert numeric values with associated units (e.g., weight, dimensions, voltage) into structured, usable data.
+
+- **Preprocessing & OCR**: Implemented advanced text recognition techniques using PaddleOCR, configured for angle classification to handle rotated text, ensuring high accuracy across various image orientations.
+- **Data Filtering & Unit Extraction**: Applied regex patterns to accurately capture and map units like kg, cm, and volt to their full forms. Designed a filtering mechanism to exclude irrelevant information and focus on key specifications.
+- **Unit Standardization & Tagging**: Created a mapping system for unit abbreviations to improve data consistency, tagging extracted values by context (e.g., weight, voltage, dimensions).
+- **Output & Data Structuring**: Structured extracted data into a standardized CSV format, facilitating easy integration into datasets and further analytics.
+
+**Results**: This solution improved the accuracy of product specification extraction, demonstrating the capability to handle diverse image formats and unit variations for scalable deployment in e-commerce environments.
+
+**Technologies**: Python, PaddleOCR, Regular Expressions, Data Processing
+
+**Impact**: Streamlined product specification extraction for e-commerce, enhancing data consistency and reducing manual input, with applications in inventory management, quality control, and customer support.
+
+---
+
+
+
+
+
 ## Feature Extraction from Images
 
 In this hackathon, the goal is to create a machine learning model that extracts entity values from images. This capability is crucial in fields like healthcare, e-commerce, and content moderation, where precise product information is vital. As digital marketplaces expand, many products lack detailed textual descriptions, making it essential to obtain key details directly from images. These images provide important information such as weight, volume, voltage, wattage, dimensions, and many more, which are critical for digital stores.
